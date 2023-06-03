@@ -6,7 +6,8 @@ import AppBarTab from './AppBarTab';
 const AppBar = () => {
 	return (
 		<View style={styles.container}>
-			<AppBarTab label="Repositories"/>
+			<AppBarTab label="Repositories" path="/"/>
+			<AppBarTab label="Sign-In" path="/signin"/>
 		</View>
 	);
 };

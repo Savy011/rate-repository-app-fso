@@ -59,6 +59,7 @@ const styles = StyleSheet.create({
 		paddingHorizontal: 15,
 		paddingTop: 15,
 	},
+	
 	detailsBodyText: {
 		color: theme.colors.textSecondary,
 		fontSize: theme.fontSizes.subheading,

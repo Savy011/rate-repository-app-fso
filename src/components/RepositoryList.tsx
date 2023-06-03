@@ -61,6 +61,8 @@ const RepositoryList = (): JSX.Element => {
 	return (
 		<FlatList
 			data={repositories}
+			ListHeaderComponent={ItemSeparator}
+			ListFooterComponent={ItemSeparator}
 			renderItem={RepositoryItem}
 			ItemSeparatorComponent={ItemSeparator}
 			keyExtractor={repo => repo.id}
