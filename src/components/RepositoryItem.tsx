@@ -1,7 +1,7 @@
-import { Image, View, StyleSheet, TextStyle } from "react-native";
-import Text from "./Text";
-import { Repository } from "../types";
-import theme from "../theme";
+import { Image, View, StyleSheet, TextStyle } from 'react-native';
+import Text from './Text';
+import { Repository } from '../types';
+import theme from '../theme';
 
 type Props = {
 	item: Repository

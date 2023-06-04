@@ -1,15 +1,15 @@
-import { Pressable, StyleSheet, TextStyle, View } from "react-native";
-import { Link } from "react-router-native";
-import theme from "../theme";
-import Text from "./Text";
+import { Pressable, StyleSheet, TextStyle, View } from 'react-native';
+import { useNavigate } from 'react-router-native';
+import theme from '../theme';
+import Text from './Text';
 
 const AppBarTab = ({ label, path }: { label: string, path: string }) => {
+	const NavigateTo = useNavigate();
+
 	return (
 		<View style={styles.container}>
-			<Pressable>
-				<Link to={path}>
-					<Text style={styles.text}>{label}</Text>
-				</Link>
+			<Pressable onPress={() => NavigateTo(path)}>
+				<Text style={styles.text}>{label}</Text>
 			</Pressable>
 		</View>
 	);
