@@ -5,7 +5,7 @@
         "ecmaFeatures": {
         "jsx": true
         },
-        "project": "./rate-repository-app/tsconfig.json"
+        "project": "./tsconfig.json"
     },
     "plugins": ["@typescript-eslint", "react", "react-hooks", "react-native"],
     "extends": [
@@ -17,7 +17,6 @@
     ],
     "rules": {
         "semi": ["error", "always"],
-        "indent": ["error", "tab"],
         "react/prop-types": "off",
         "react/react-in-jsx-scope": "off"
     },
